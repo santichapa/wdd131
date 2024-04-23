@@ -10,12 +10,9 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: #000;
     width: 100%;
-    margin: 0 auto;
-    padding: 0;
     text-align: center;
 }
 .navigation a {
-    margin: auto;
     padding: 1em;
     flex: 1 1 100%;
     text-decoration: none;
@@ -27,10 +24,14 @@ body {
     font-weight: 700;
 }
 
-header {
+header{
     grid-column: 1/3;
     color: #ddd;
     background-color: #555;
+    padding: 0;
+}
+
+header h1 {
     padding: 1em;
 }
 
