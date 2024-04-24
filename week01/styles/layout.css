@@ -4,7 +4,7 @@ body {
     grid-template-columns: 3fr 1fr;
 }
 
-.navigation {
+nav {
     grid-column: 1/3;
     display: flex;
     font-family: "Roboto", sans-serif;
@@ -12,14 +12,14 @@ body {
     width: 100%;
     text-align: center;
 }
-.navigation a {
+nav a {
     padding: 1em;
     flex: 1 1 100%;
     text-decoration: none;
     color: #fff;
     border-bottom: 3px solid #000;
 }
-.navigation a:hover {
+nav a:hover {
     border-bottom: 3px solid yellow;
     /* text-decoration: underline; */
     font-weight: 700;
@@ -40,6 +40,10 @@ main {
     background-color: #ddd;
     padding: 1em;
     height: 50vh;
+}
+
+img {
+    width: 200px;
 }
 
 .aside {
