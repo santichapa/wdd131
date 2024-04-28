@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Chaparro</title>
+    <meta name="description" content="A home page for activities and projects in WDD 131 - Dynamic Web Fundamentals by Santiago Ariel Chaparro.">
+    <meta name="author" content="Santiago Ariel Chaparro">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Santiago Chaparro</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/santiago-ariel-chaparro/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/3?lang=eng">Scripture</a>
+            <a href="project/index.html">Final Project</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile-picture.webp" alt="A profile picture of Santiago Cahaparro" width="200" loading="lazy">
+            <p>My name is Santiago, I'm the second youngest brother of five. 
+                I live in Argentina, a beautiful country, but I also like to visit other 
+                countries and experience life with different cultures. I recently returned 
+                from a mission in Brazil where I had the opportunity to learn Portuguese 
+                and meet wonderful people. I am a simple person, that likes to share time 
+                with friends and playing sports, for example, I play football (soccer) 
+                twice a week with friends and love it. I am a music enthusiast, I like to 
+                play different musical instruments, like piano, guitar or ukelele and 
+                currently I am learning to play the drums. Since I was very young, I've 
+                been always interested in building things using my imagination to solve 
+                problems and also liked technology a lot. So now I'm learning to program 
+                in different languages, and also learning to develop web pages like this 
+                one.
+            </p>
+            <h3>Buenos Aires, Argentina</h3>
+            <figure>
+                <img src="images/argentina-flag.webp" alt="Official flag of Argentina" class="flag">
+               <figcaption>Official Flag of Argentina.</figcaption> 
+            </figure>
+            
+            <p>Argentina is a diverse and vibrant country located in South America, 
+                known for its passionate culture, rich history, and natural beauty. 
+                It is the eighth largest country in the world, with a population of 
+                over 44 million people. Argentina is famous for its beef, wine, 
+                tango music and dance, and its football (soccer) culture. The 
+                country also boasts stunning landscapes, including the Andes 
+                Mountains, the Iguazu Falls, and the Patagonian region.</p>
+        </section>
+        <section class="card aside">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/">W3schools</a> - simple theory and examples</li>
+                <li><a href="https://fonts.google.com/">Google Fonts</a> - fonts, icons, etc.</li>
+                <li><a href="https://www.favicon.cc/">favicon.cc</a> - favicon generator</li>
+                <li><a href="https://www.siegemedia.com/contrast-ratio">Contrast Ratio</a> - WCAG color contrast checker</li>
+                <li><a href="https://coolors.co/generate">Coolors</a> - super fast color palettes generator</li>
+                <li><a href="https://squoosh.app/">Squoosh</a> - reduce image file size and quality</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Santiago A. Chaparro | Buenos Aires, Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
