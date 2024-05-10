@@ -3,7 +3,7 @@
     --primary-color: #7b1717;
     --secondary-color: #004400;
     --primary-font-color: #eee;
-    --weather-icon: url(https://santichapa.github.io/wdd131/images/weather-icon.svg)
+    --weather-icon: url(../images/weather-icon.svg)
 }
 
 body {
