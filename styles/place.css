@@ -3,7 +3,7 @@
     --primary-color: #7b1717;
     --secondary-color: #004400;
     --primary-font-color: #eee;
-    --weather-icon: url(images/weather-icon.svg)
+    --weather-icon: url(../images/weather-icon.svg)
 }
 
 body {
@@ -99,8 +99,8 @@ footer {
         position: absolute;
         width: 250px;
         margin: 0;
-        right: 2em;
-        bottom: 2em;
+        right: 1.5em;
+        bottom: 3em;
     }
 
     .temp h2::after {
@@ -109,7 +109,7 @@ footer {
 
     .data {
         width: 300px;
-        left: 2em;
-        top: 2em;
+        left: 1.5em;
+        top: 3em;
     }
 }
