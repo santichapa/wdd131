@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading</title>
+    <meta name="description" content="A a small page with multiple images to scroll through, with the aim to apply lazy loading.">
+    <meta name="author" content="Santiago Ariel Chaparro">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading</h1>
+    </header>
+    <main>
+        <img src="https://loremflickr.com/480/640" alt="A placeholder random image" width="400" height="600">
+        <img src="https://loremflickr.com/480/640" alt="A placeholder random image" width="400" height="600">
+        <img src="https://loremflickr.com/480/640" alt="A placeholder random image" width="400" height="600">
+        <img loading="lazy" src="https://picsum.photos/480/640" alt="A placeholder random image" width="400" height="600">
+        <img loading="lazy" src="https://picsum.photos/480/640" alt="A placeholder random image" width="400" height="600">
+        <img loading="lazy" src="https://picsum.photos/480/640" alt="A placeholder random image" width="400" height="600">
+    </main>
+    <p>&copy;<span id="currentyear"></span> | Santiago A. Chaparro | Buenos Aires, Argentina</p>
+        <p id="lastModified"></p>
+</body>
+</html>
