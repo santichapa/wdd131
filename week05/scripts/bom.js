@@ -2,7 +2,7 @@ const b = document.querySelector("button");
 const input = document.querySelector("#favchap");
 const ul = document.querySelector("#list");
 
-const chaptersArray = getChapterList() || [];
+let chaptersArray = getChapterList() || [];
 
 
 chaptersArray.forEach(chapter => displayList(chapter));
@@ -16,16 +16,7 @@ b.addEventListener("click", () => {
         setChapterList();
 
         input.value = "";
-        input.focus();
-
-
-        
-        
-        
-        input.value = "";
-        
-        input.focus();
-        
+        input.focus();    
     }
     else {
         input.focus();
@@ -37,7 +28,7 @@ b.addEventListener("click", () => {
 function displayList(item) {
     const li = document.createElement("li");
     const del = document.createElement("button"); 
-    li.textContent = input.value;
+    li.textContent = item;
     del.textContent = "❌";
     del.classList.add("delete");
     
@@ -52,8 +43,7 @@ function displayList(item) {
 }
 
 function setChapterList() {
-    newArray = JSON.stringify(chaptersArray);
-    localStorage.setItem("BOMList", newArray);
+    localStorage.setItem("BOMList", JSON.stringify(chaptersArray));
 }
 
 function getChapterList() {
