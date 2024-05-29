@@ -1,0 +1,173 @@
+:root {
+    --font-titles: "Exo 2", sans-serif;
+    --font-p: "Roboto", sans-serif;
+    --primary-color-bg: #53DD6C; 
+    --secondary-color-bg: #3F7863;
+    --bright-font: #fff;
+    --dark-font: #000;
+    --light-shadow: 0 0 1em .5em #777;
+}
+
+body {
+    max-width: 1500px;
+    margin: auto;
+}
+
+header {
+    background-color: var(--primary-color-bg);
+    margin: 0;
+    border-radius: 4em 0;
+    box-shadow: var(--light-shadow);
+}
+
+h1 {
+    color: var(--dark-font);
+    font-family: var(--font-titles);
+    padding: 1rem 0 0;
+    margin: .5em;
+    text-align: center;
+}
+
+h2, h3 {
+    background-color: var(--secondary-color-bg);
+    color: var(--bright-font);
+    font-family: var(--font-titles);
+    padding: .5rem;
+    text-align: center;
+}
+
+main {
+    background-color: #ddd;
+}
+
+p {
+    text-align: center;
+    padding: 1em;
+    font-family: var(--font-p);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.card {
+    margin: 1em;
+    border: 1px solid #aaa;
+    border-radius: .5rem;
+    max-width: 500px;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+}
+
+.calltoaction {
+    background-color: rgb(0, 0, 0, 50%);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 5em;
+}
+
+.calltoaction h2 {
+    background: none;
+}
+
+.calltoaction a {
+    text-decoration: none;
+    color: var(--bright-font);
+    font-family: var(--font-p);
+    background-image: linear-gradient(var(--primary-color-bg), var(--secondary-color-bg));
+    padding: 1em;
+    border-radius: .5rem;
+}
+
+.calltoaction a:hover {
+    text-shadow: #fff 1px 1px 1em;
+}
+
+.calltoaction a:active {
+    background-image: linear-gradient(var(--secondary-color-bg), var(--primary-color-bg));
+}
+
+
+
+
+footer {
+    background-color: var(--secondary-color-bg);
+}
+
+/* ========== HAMBURGUER MENU ========== */
+
+#menu {
+    width: 100%;
+    font-size: 1.5rem;
+    background-color:  var(--primary-color);
+    color: var(--primary-font-color);
+    border: none;
+    margin: 0;
+}
+
+#menu:hover {
+    text-shadow: 0 0 .2em #fff;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✕";
+}
+
+nav, a{
+    margin: 0;
+}
+
+nav a:hover {
+    border-bottom: 3px solid yellow;
+    font-weight: 700;
+    border-radius: 0 0 .5em .5em;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color-bg);
+    text-align: center;
+    border-radius: 0 0 .5em .5em;
+}
+
+nav a {
+    display: none;
+    padding: 1em;
+    font-weight: 600;
+    font-family: var(--font-titles);
+    color: var(--primary-font);
+    text-decoration: none;
+    border-radius: 0 0 .5em .5em;
+    border-bottom: 3px var(--primary-color-bg) solid;
+}
+
+nav a.active {
+    color: #FF785A;
+    text-decoration: underline 2px;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color-bg);
+    color: var(--bright-font);
+    font-weight: 800;
+    border-radius: 0 0 .5em .5em;
+    
+}
+
+.open, .open a {
+    display: block;
+}
