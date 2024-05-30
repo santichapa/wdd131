@@ -62,6 +62,10 @@ p {
 
 }
 
+.card img {
+    width: 100%;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
@@ -101,6 +105,9 @@ p {
 
 footer {
     background-color: var(--secondary-color-bg);
+}
+footer p {
+    margin: 0;
 }
 
 /* ========== HAMBURGUER MENU ========== */
@@ -170,4 +177,92 @@ nav a:hover {
 
 .open, .open a {
     display: block;
+}
+
+/* ========== FORM STYLING ========== */
+.wf {
+    max-width: 400px;
+    margin: 0 auto 1em;
+    width: 100%;
+    padding: 0 1em;
+}
+.wf fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0;
+    font-family: var(--font-p);
+    width: 100%;
+}
+
+.wf legend {
+    color: #a96144;
+    padding: 0;
+}
+
+.wf label {
+    display: block;
+    padding-top: 1rem;
+    color: #139c41;
+    font-size: .9rem;
+}
+
+.wf div {
+    padding-top: 1rem;
+    color: #a96644;
+    font-size: .9rem;
+}
+
+.wf input[type="text"],
+.wf input[type="tel"],
+.wf input[type="email"],
+.wf input[type="url"],
+.wf input[type="date"],
+.wf select,
+.wf input[type="number"],
+.wf textarea
+{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 90%;
+    appearance: none;
+}
+
+.wf input[type="radio"],
+.wf input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--primary-color-bg), var(--secondary-color-bg));
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 90%;
+    max-width: 400px;
+    margin: -1rem 3% 2rem 3%;
+    
+    box-shadow: 1px 1px 4px #999;
+    font-weight: 600;
+}
+
+.wf input[type="submit"]:hover {
+    text-shadow: #fff 1px 1px 1em;
+}
+
+.wf input[type="submit"]:active {
+    background-image: linear-gradient(var(--secondary-color-bg), var(--primary-color-bg));
+}
+
+.wf input:required {
+    border-bottom: solid 8px red;
+}
+
+.wf input:required:valid {
+    border-bottom: solid 8px green;
 }
