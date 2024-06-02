@@ -125,7 +125,7 @@ td {
 }
 
 footer {
-    background-color: var(--secondary-color-bg);
+    background-color: var(--primary-color-bg);
 }
 footer p {
     margin: 0;

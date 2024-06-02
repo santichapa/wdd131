@@ -153,7 +153,7 @@ function createEventsTable() {
     row.appendChild(dateend);
     row.appendChild(numteams);
 
-    eventList.appendChild(row);
+    eventList?.appendChild(row);
   });
 }
 
@@ -184,7 +184,7 @@ function createFieldsTable() {
     row.appendChild(rating);
     row.appendChild(ages);
     
-    fieldList.appendChild(row);
+    fieldList?.appendChild(row);
   });
 }
 
