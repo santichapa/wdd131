@@ -235,8 +235,6 @@ nav a:hover {
 .wf input[type="text"],
 .wf input[type="tel"],
 .wf input[type="email"],
-.wf input[type="url"],
-.wf input[type="date"],
 .wf select,
 .wf input[type="number"],
 .wf textarea
@@ -251,7 +249,6 @@ nav a:hover {
     appearance: none;
 }
 
-.wf input[type="radio"],
 .wf input[type="checkbox"] {
     margin-right: 6px;
 }
